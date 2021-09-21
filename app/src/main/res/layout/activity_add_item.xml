@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addItem">
+
+    <View
+        android:id="@+id/addphotoView"
+        android:layout_width="244dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/box"
+        android:backgroundTint="@color/box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_addItemName"
+        android:layout_width="144dp"
+        android:layout_height="44dp"
+        android:text="@string/tv_addItemName"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_addItemName"
+        app:layout_constraintEnd_toStartOf="@+id/et_addItemName"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_addItemprice"
+        android:layout_width="144dp"
+        android:layout_height="44dp"
+        android:text="@string/tv_addItemprice"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_addItemprice"
+        app:layout_constraintEnd_toStartOf="@+id/et_addItemName"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_addItemDes"
+        android:layout_width="144dp"
+        android:layout_height="44dp"
+        android:text="@string/tv_addItemDes"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_addItemDescription"
+        app:layout_constraintEnd_toStartOf="@+id/et_addItemName"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_addItemName"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint="@string/et_addItemName"
+        android:inputType="textPersonName"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_addItemprice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addphotoView"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <EditText
+        android:id="@+id/et_addItemprice"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:hint="@string/et_addItemprice"
+        android:inputType="textPersonName"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addphotoView" />
+
+    <EditText
+        android:id="@+id/et_addItemDescription"
+        android:layout_width="232dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint="@string/et_addItemDescription"
+        android:inputType="textPersonName"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addphotoView" />
+
+    <Button
+        android:id="@+id/btn_addProduct"
+        android:layout_width="161dp"
+        android:layout_height="65dp"
+        android:text="@string/btn_addProduct"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_addItemDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

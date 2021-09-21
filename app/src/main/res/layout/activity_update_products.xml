@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateProducts">
+
+    <View
+        android:id="@+id/view_updateitemPhoto"
+        android:layout_width="229dp"
+        android:layout_height="151dp"
+        android:background="@color/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/tv_updatename"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/tv_updatename"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_getname"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_updateprice"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/tv_updateprice"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_getname2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_updatedes"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/tv_updatedes"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_getname3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_getname"
+        android:layout_width="181dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_updatename"
+        app:layout_constraintTop_toBottomOf="@+id/view_updateitemPhoto" />
+
+    <TextView
+        android:id="@+id/tv_getname2"
+        android:layout_width="181dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_updatename"
+        app:layout_constraintTop_toBottomOf="@+id/view_updateitemPhoto" />
+
+    <TextView
+        android:id="@+id/tv_getname3"
+        android:layout_width="181dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_updatename"
+        app:layout_constraintTop_toBottomOf="@+id/view_updateitemPhoto" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="165dp"
+        android:layout_height="52dp"
+        android:text="Save"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_updatedes" />
+</androidx.constraintlayout.widget.ConstraintLayout>

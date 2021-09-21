@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Item1">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="224dp"
+        android:layout_height="226dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059"
+        app:srcCompat="@drawable/makeup1" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="124dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081"
+        app:srcCompat="@drawable/ee" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="128dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.03"
+        app:srcCompat="@drawable/kit2" />
+
+    <TextView
+        android:id="@+id/tv_Itemname1"
+        android:layout_width="382dp"
+        android:layout_height="84dp"
+        android:text="@string/tv_Itemname1"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textDirection="ltr"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="61dp"
+        android:layout_height="32dp"
+        android:text="Brand"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Itemname1"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="339dp"
+        android:layout_height="41dp"
+        android:text="COBazar More Makeup from COBaza"
+        android:textColor="@color/tv_des"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tv_price1"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:text="Rs. 8,500.00"
+        android:textColor="#FF5733"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <Button
+        android:id="@+id/btn_purachse"
+        android:layout_width="181dp"
+        android:layout_height="72dp"
+        android:backgroundTint="@color/tv_des"
+        android:text="@string/btn_purachse"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_addToCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_addToCart"
+        android:layout_width="190dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#FF5733"
+        android:onClick="sendName"
+        android:text="@string/btn_addToCart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toEndOf="@+id/btn_purachse"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.894" />
+</androidx.constraintlayout.widget.ConstraintLayout>
