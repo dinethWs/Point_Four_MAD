@@ -14,6 +14,7 @@ public class Item1 extends AppCompatActivity {
     Button btn_addToCart;
 
     public static final String name_message = "com.example.nameMessage";
+    public static final String price_message = "com.example.priceMessage";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,6 @@ public class Item1 extends AppCompatActivity {
                 openPayment();
             }
         });
-
-
     }
     public  void openPayment(){
         Intent intent = new Intent(this, Payment.class);
@@ -41,8 +40,14 @@ public class Item1 extends AppCompatActivity {
     }
     public void sendName(View view){
         Intent intent = new Intent(this, Cart.class);
+
         TextView tv_price1 = (TextView) findViewById(R.id.tv_price1);
-        String nameMessage = tv_price1.getText().toString();
+        String priceMessage = tv_price1.getText().toString();
+        intent.putExtra(price_message, priceMessage);
+        startActivity(intent);
+
+        TextView tv_Itemname1 = (TextView) findViewById(R.id.tv_Itemname1);
+        String nameMessage = tv_Itemname1.getText().toString();
         intent.putExtra(name_message, nameMessage);
         startActivity(intent);
 

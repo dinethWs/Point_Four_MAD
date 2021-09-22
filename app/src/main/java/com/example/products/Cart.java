@@ -19,5 +19,9 @@ public class Cart extends AppCompatActivity {
         TextView tv_item1 = (TextView) findViewById(R.id.tv_item1);
         tv_item1.setText(nameMessage);
 
+        String priceMessage = intent.getStringExtra(Item1.price_message);
+        TextView tv_p1 = (TextView) findViewById(R.id.tv_p1);
+        tv_p1.setText(priceMessage);
+
     }
 }
