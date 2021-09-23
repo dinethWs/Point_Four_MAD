@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".delivery">
+
+    <EditText
+        android:id="@+id/tv_location"
+        android:layout_width="300dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="@string/tv_location"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <TextView
+        android:id="@+id/tv_sender"
+        android:layout_width="162dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_senderD"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+    <TextView
+        android:id="@+id/tv_sendername"
+        android:layout_width="117dp"
+        android:layout_height="45dp"
+        android:text="@string/tv_sendername"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_sendername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_senderemail"
+        android:layout_width="117dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="212dp"
+        android:text="@string/tv_senderemail"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+    <EditText
+        android:id="@+id/et_senderphone"
+        android:layout_width="208dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        android:hint="@string/et_senderphone"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_sendername"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sender" />
+
+    <EditText
+        android:id="@+id/et_sendername"
+        android:layout_width="208dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/et_sendername"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_sendername"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sender" />
+
+    <TextView
+        android:id="@+id/tv_senderphone"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/tv_senderphone"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+    <EditText
+        android:id="@+id/et_senderemail"
+        android:layout_width="208dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="@string/et_senderemail"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_sendername"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sender" />
+
+    <TextView
+        android:id="@+id/tv_tot"
+        android:layout_width="116dp"
+        android:layout_height="43dp"
+        android:text="@string/tv_tot"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_delsub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_deliveryfee"
+        android:layout_width="221dp"
+        android:layout_height="42dp"
+        android:text="@string/tv_deliveryfee"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_delcharge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_delsubtota"
+        android:layout_width="116dp"
+        android:layout_height="43dp"
+        android:text="@string/tv_delsubtota"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_subdel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_delsub"
+        android:layout_width="122dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="60dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintStart_toEndOf="@+id/tv_tot"
+        app:layout_constraintTop_toBottomOf="@+id/et_senderphone" />
+
+    <TextView
+        android:id="@+id/tv_delcharge"
+        android:layout_width="122dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintStart_toEndOf="@+id/tv_tot"
+        app:layout_constraintTop_toBottomOf="@+id/tv_delsub" />
+
+    <TextView
+        android:id="@+id/tv_subdel"
+        android:layout_width="122dp"
+        android:layout_height="33dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintStart_toEndOf="@+id/tv_tot"
+        app:layout_constraintTop_toBottomOf="@+id/tv_delcharge"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <Button
+        android:id="@+id/btn_contCard"
+        android:layout_width="172dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="28dp"
+        android:text="Continue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

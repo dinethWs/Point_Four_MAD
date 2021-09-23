@@ -34,7 +34,7 @@ public class Item1 extends AppCompatActivity {
         });
     }
     public  void openPayment(){
-        Intent intent = new Intent(this, Payment.class);
+        Intent intent = new Intent(this, payment.class);
         startActivity(intent);
 
     }

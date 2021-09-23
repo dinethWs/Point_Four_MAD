@@ -65,5 +65,13 @@
     <string name="tv_updatename">Product Name</string>
     <string name="tv_updateprice">Price</string>
     <string name="tv_updatedes">Description</string>
+    <string name="btn_extra">Select</string>
+    <string name="tv_discount">Discount Amount</string>
+    <string name="tv_discountedTotal">Discounted total</string>
+    <string name="tv_disAmount">0.0</string>
+    <string name="btn_IPurchase2">Purchase</string>
+    <string name="tv_senderD">Sender Details</string>
+    <string name="btn_take">Takeaway</string>
+    <string name="btn_deli">Delivery</string>
 
 </resources>
