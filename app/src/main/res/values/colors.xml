@@ -11,5 +11,7 @@
     <color name="tv_des">#3D65EA</color>
     <color name="view_box">#E3E0DF</color>
     <color name="btn_addItem">#45A4DB</color>
+    <color name="btn_IPurch">#3D65</color>
+    <color name="btn_IPurchse2">#3D65EA</color>
 
 </resources>

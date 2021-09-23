@@ -7,53 +7,16 @@
     tools:context=".Cart">
 
     <TextView
-        android:id="@+id/tv_p"
-        android:layout_width="97dp"
-        android:layout_height="57dp"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.569"
-        app:layout_constraintStart_toEndOf="@+id/tv_item1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692" />
-
-    <TextView
-        android:id="@+id/tv_p3"
-        android:layout_width="97dp"
-        android:layout_height="57dp"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.569"
-        app:layout_constraintStart_toEndOf="@+id/tv_item1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
-
-    <TextView
         android:id="@+id/tv_p4"
-        android:layout_width="97dp"
-        android:layout_height="57dp"
-        android:textSize="24sp"
+        android:layout_width="126dp"
+        android:layout_height="47dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toEndOf="@+id/tv_item1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.906" />
-
-    <TextView
-        android:id="@+id/tv_i1"
-        android:layout_width="134dp"
-        android:layout_height="47dp"
-        android:text="@string/tv_i1"
-        android:textColor="@color/black"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tv_p"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.683" />
 
     <TextView
         android:id="@+id/tv_i3"
@@ -65,20 +28,7 @@
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_p4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_i2"
-        android:layout_width="134dp"
-        android:layout_height="47dp"
-        android:text="@string/tv_i"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tv_p3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent" />
 
     <View
@@ -152,10 +102,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view_box"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintVertical_bias="0.193" />
 
     <Button
         android:id="@+id/btn_cont"
@@ -165,9 +115,69 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_i3"
-        app:layout_constraintVertical_bias="0.416" />
+        app:layout_constraintVertical_bias="0.816" />
+
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="207dp"
+        android:layout_height="53dp"
+        android:text="@string/tv_discount"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_disAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_discountedTotal"
+        android:layout_width="207dp"
+        android:layout_height="53dp"
+        android:text="@string/tv_discountedTotal"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_disSubTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_disAmount"
+        android:layout_width="92dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_disAmount"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toEndOf="@+id/tv_discount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_p4" />
+
+    <TextView
+        android:id="@+id/tv_disSubTotal"
+        android:layout_width="129dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="100dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toEndOf="@+id/tv_discountedTotal" />
+
+    <Button
+        android:id="@+id/btn_shopping"
+        android:layout_width="193dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="Keep Shopping"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_box" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

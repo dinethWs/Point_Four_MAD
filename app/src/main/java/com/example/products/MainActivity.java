@@ -13,6 +13,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button btn_extra;
+    Button btn_facial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn_extra = findViewById(R.id.btn_extra);
+        btn_facial = findViewById(R.id.btn_facial);
     }
 
     @Override
@@ -31,10 +33,19 @@ public class MainActivity extends AppCompatActivity {
                 openItem1();
             }
         });
+        btn_facial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openItem2();
+            }
+        });
     }
     public  void openItem1(){
         Intent intent = new Intent(this, Item1.class);
         startActivity(intent);
-
+    }
+    public  void openItem2(){
+        Intent intent = new Intent(this, Item2.class);
+        startActivity(intent);
     }
 }
