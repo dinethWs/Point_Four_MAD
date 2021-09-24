@@ -66,4 +66,55 @@
     <string name="tv_updateprice">Price</string>
     <string name="tv_updatedes">Description</string>
 
+
+
+
+
+    <string name="rd_btn3">Kids</string>
+    <string name="rd_btn2">Women</string>
+    <string name="rd_btn1">Men</string>
+    <string name="tv_1">Hair Cut</string>
+    <string name="rd_btn4">Mineral Makeup</string>
+    <string name="rd_btn5">Matte Makeup</string>
+    <string name="rd_btn6">Air-Brush Makeup</string>
+    <string name="rd_btn7">Normal Makeup</string>
+    <string name="tv_2">Make-Up</string>
+    <string name="rd_btn8">Full Body Massage</string>
+    <string name="rd_btn9">Couple Body Massage</string>
+    <string name="rd_btn10">Foot Massage</string>
+    <string name="tv_3">Massages</string>
+    <string name="rd_btn_payonline">Pay Online</string>
+    <string name="rd_btn_payshop">Pay To Shop</string>
+    <string name="tv_4">Card Holder\'s Name</string>
+    <string name="et_cardholdersname" />
+    <string name="et_holdersname">Card Holder\'s Name</string>
+    <string name="tv_5">Card No</string>
+    <string name="et_cardno">Enter Card No</string>
+    <string name="tv_7">Expire Date</string>
+    <string name="et_amount">Amount</string>
+    <string name="btn_service_next">NEXT</string>
+    <string name="btn_service_paynow">PAY-NOW</string>
+    <string name="tv_10">PAYMENT COMPLETED</string>
+    <string name="tv_11">Your Booking Has Confirmed</string>
+    <string name="tv_12">Thanks For Choosing Us!</string>
+    <string name="btn_pay_back_home">HOME</string>
+    <string name="btn_confirmpayment">CONFIRM</string>
+    <string name="tv_skin"><![CDATA[Skin & Care]]></string>
+    <string name="tv_wedding">Weddings</string>
+    <string name="rd_btn_skin1">Fruit Facial</string>
+    <string name="rd_btn_skin2">Acne Facial</string>
+    <string name="rd_btn_skin3">Full Body</string>
+    <string name="rd_btn_wed1">Female Dressing</string>
+    <string name="rd_btn_wed2">Male Dressing</string>
+    <string name="btn_add_list">Add To List</string>
+    <string name="tv_cardno">Card No</string>
+    <string name="tv_featured_services">Featured Services</string>
+    <string name="tv_make_up">Make-Ups</string>
+    <string name="tv_massages_home">Massages</string>
+    <string name="tv_featured_items">Featured Items</string>
+    <string name="tv_makeupkit">Makeup-Kits</string>
+    <string name="tv_lipstik">Lipstik</string>
+    <string name="btn_home_service">View All</string>
+    <string name="btn_home_items">View All</string>
+
 </resources>
