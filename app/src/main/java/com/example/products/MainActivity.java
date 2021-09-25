@@ -9,11 +9,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btn_extra;
     Button btn_facial;
+    ImageButton imgBtn_set;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_extra = findViewById(R.id.btn_extra);
         btn_facial = findViewById(R.id.btn_facial);
+        imgBtn_set = findViewById(R.id.imgBtn_set);
     }
 
     @Override
@@ -39,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
                 openItem2();
             }
         });
+        imgBtn_set.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAdmin();
+            }
+        });
     }
     public  void openItem1(){
         Intent intent = new Intent(this, Item1.class);
@@ -46,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public  void openItem2(){
         Intent intent = new Intent(this, Item2.class);
+        startActivity(intent);
+    }
+    public  void openAdmin(){
+        Intent intent = new Intent(this, addItem.class);
         startActivity(intent);
     }
 }
