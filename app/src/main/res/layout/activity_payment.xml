@@ -11,6 +11,7 @@
         android:layout_width="160dp"
         android:layout_height="59dp"
         android:layout_marginTop="168dp"
+        android:onClick="sendToTakeaway"
         android:text="@string/btn_take"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,6 +24,7 @@
         android:layout_width="174dp"
         android:layout_height="59dp"
         android:layout_marginTop="168dp"
+        android:onClick="sendToDelivery"
         android:text="@string/btn_deli"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,12 +34,12 @@
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="372dp"
-        android:layout_height="455dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="374dp"
+        android:layout_height="420dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bsaloon" />
 
@@ -55,4 +57,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.589" />
+
+    <TextView
+        android:id="@+id/tv_eee"
+        android:layout_width="107dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_take" />
 </androidx.constraintlayout.widget.ConstraintLayout>

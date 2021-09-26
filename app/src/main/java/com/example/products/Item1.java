@@ -15,6 +15,7 @@ public class Item1 extends AppCompatActivity {
 
     public static final String name_message = "com.example.nameMessage";
     public static final String price_message = "com.example.priceMessage";
+    public static final String pricePay_message = "com.example.pricePayMessage";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,21 +24,7 @@ public class Item1 extends AppCompatActivity {
         btn_purachse = findViewById(R.id.btn_purachse);
         btn_addToCart = findViewById(R.id.btn_addToCart);
     }
-    @Override
-    protected void onResume() {
-        super.onResume();
-        btn_purachse.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPayment();
-            }
-        });
-    }
-    public  void openPayment(){
-        Intent intent = new Intent(this, payment.class);
-        startActivity(intent);
 
-    }
     public void sendName(View view){
         Intent intent = new Intent(this, Cart.class);
 
@@ -50,6 +37,16 @@ public class Item1 extends AppCompatActivity {
         String nameMessage = tv_Itemname1.getText().toString();
         intent.putExtra(name_message, nameMessage);
         startActivity(intent);
+
+    }
+    public void sendToTakeaway(View view){
+        Intent intent = new Intent(this, payment.class);
+
+        TextView tv_price1 = (TextView) findViewById(R.id.tv_price1);
+        String pricePayMessage = tv_price1.getText().toString();
+        intent.putExtra(pricePay_message, pricePayMessage);
+        startActivity(intent);
+
 
     }
 }
