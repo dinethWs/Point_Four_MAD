@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <item name="tv_featured_services" type="id">Featured Sevices</item>
+    <item name="tv_make_up" type="id">Make-Up</item>
 </resources>
