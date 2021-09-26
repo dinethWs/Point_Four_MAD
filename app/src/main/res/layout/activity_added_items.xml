@@ -6,64 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".addedItems">
 
-    <Button
-        android:id="@+id/btn_itemAdd"
-        android:layout_width="226dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/btn_addItem"
-        android:backgroundTint="@color/btn_addItem"
-        android:text="Add Item"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+
+    <TextView
+        android:id="@+id/tv_navMsg"
+        android:layout_width="405dp"
+        android:layout_height="81dp"
+        android:text="Swipe left to edit and right to delete.."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/addview1"
-        android:layout_width="374dp"
-        android:layout_height="111dp"
-        android:layout_marginTop="32dp"
-        android:background="@color/box"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_itemAdd" />
-
-    <View
-        android:id="@+id/view3"
-        android:layout_width="374dp"
-        android:layout_height="111dp"
-        android:layout_marginTop="336dp"
-        android:background="@color/box"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_itemAdd" />
-
-    <View
-        android:id="@+id/view4"
-        android:layout_width="374dp"
-        android:layout_height="111dp"
-        android:layout_marginTop="480dp"
-        android:background="@color/box"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="398dp"
+        android:layout_height="640dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_itemAdd"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <View
-        android:id="@+id/addview2"
-        android:layout_width="369dp"
-        android:layout_height="118dp"
-        android:background="@color/box"
-        app:layout_constraintBottom_toTopOf="@+id/view3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addview1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

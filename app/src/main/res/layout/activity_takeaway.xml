@@ -127,7 +127,7 @@
         android:id="@+id/tv_takesubtot"
         android:layout_width="139dp"
         android:layout_height="50dp"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_takesub"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_takesub" />

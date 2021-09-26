@@ -27,7 +27,7 @@
         android:textSize="22sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/et_addItemName"
         app:layout_constraintEnd_toStartOf="@+id/et_addItemName"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.309"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -39,7 +39,7 @@
         android:textSize="22sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/et_addItemprice"
         app:layout_constraintEnd_toStartOf="@+id/et_addItemName"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -51,13 +51,13 @@
         android:textSize="22sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/et_addItemDescription"
         app:layout_constraintEnd_toStartOf="@+id/et_addItemName"
-        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintHorizontal_bias="0.309"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/et_addItemName"
-        android:layout_width="238dp"
-        android:layout_height="50dp"
+        android:layout_width="208dp"
+        android:layout_height="49dp"
         android:layout_marginTop="104dp"
         android:layout_marginEnd="4dp"
         android:ems="10"
@@ -71,10 +71,10 @@
 
     <EditText
         android:id="@+id/et_addItemprice"
-        android:layout_width="238dp"
+        android:layout_width="204dp"
         android:layout_height="50dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="4dp"
         android:ems="10"
         android:hint="@string/et_addItemprice"
         android:inputType="textPersonName"
@@ -84,13 +84,12 @@
 
     <EditText
         android:id="@+id/et_addItemDescription"
-        android:layout_width="232dp"
-        android:layout_height="56dp"
+        android:layout_width="207dp"
+        android:layout_height="52dp"
         android:layout_marginTop="296dp"
         android:layout_marginEnd="4dp"
         android:ems="10"
-        android:hint="@string/et_addItemDescription"
-        android:inputType="textPersonName"
+        android:hint="Enter Description"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addphotoView" />
@@ -99,12 +98,37 @@
         android:id="@+id/btn_addProduct"
         android:layout_width="161dp"
         android:layout_height="65dp"
-        android:text="@string/btn_addProduct"
+        android:text="Save"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_addItemDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/et_addItemDescription"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <Button
+        android:id="@+id/btn_viewItems"
+        android:layout_width="161dp"
+        android:layout_height="65dp"
+        android:text="View Items"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_addItemDescription"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <ImageView
+        android:id="@+id/itemPic"
+        android:layout_width="233dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
