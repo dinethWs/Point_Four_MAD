@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Products">
-        <activity android:name=".addService"></activity>
+        <activity
+            android:name=".Activity5"
+            android:exported="true" />
+        <activity android:name=".addService" />
         <activity android:name=".HomeDisplay" />
         <activity android:name=".payment" />
         <activity android:name=".ItemDelivery" />
