@@ -28,8 +28,8 @@ public class Activity5 extends AppCompatActivity {
     private Button new5;
     private RecyclerView recyclerView;
     private FirebaseFirestore DB;
-   // private VisitingAdapter visitingAdapter;
-    //private List<VisitingModel> visitinglist;
+    private VisitingAdapter visitingAdapter;
+    private List<VisitingModel> visitinglist;
 
 
     @Override
@@ -42,14 +42,13 @@ public class Activity5 extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         DB= FirebaseFirestore.getInstance();
-      /*  visitinglist=new ArrayList<>();
+        visitinglist=new ArrayList<>();
         visitingAdapter=new VisitingAdapter(this,visitinglist);
         recyclerView.setAdapter(visitingAdapter);
 
         //update
         ItemTouchHelper touchHelper = new ItemTouchHelper(new TouchHelperVisiting(visitingAdapter));
         touchHelper.attachToRecyclerView(recyclerView);
-*/
 
      //   showVisitings();
 
@@ -72,7 +71,7 @@ public class Activity5 extends AppCompatActivity {
     }
 
 
-   /* public void showVisitings(){
+    public void showVisitings(){
 
         DB.collection("VisitingBookings").get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -99,5 +98,5 @@ public class Activity5 extends AppCompatActivity {
 
     }
 
-*/
+
 }

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:layout_margin="13dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E6E91E63"
+            android:padding="5dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/Phone3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C6E91E63"
+            android:padding="5dp"
+            android:text="phone_no"
+            android:textColor="#000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/address3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A8E91E63"
+            android:padding="5dp"
+            android:text="address"
+            android:textColor="#000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/Date3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#81E91E63"
+            android:padding="5dp"
+            android:text="Date"
+            android:textColor="#000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/Time3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#45E91E63"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="#000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
