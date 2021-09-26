@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Products">
+        <activity android:name=".addService"></activity>
         <activity android:name=".HomeDisplay" />
         <activity android:name=".payment" />
         <activity android:name=".ItemDelivery" />
@@ -16,19 +17,16 @@
         <activity android:name=".Item2" />
         <activity android:name=".updateProducts" />
         <activity android:name=".addedItems" />
-        <activity android:name=".addItem"/>
-
+        <activity android:name=".addItem" />
         <activity android:name=".Cart" />
         <activity android:name=".Item1" />
         <activity android:name=".MainActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>
